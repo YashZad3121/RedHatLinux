@@ -1,0 +1,279 @@
+LINUX BASIC COMMANDS
+
+[root@5fa48e0d86c5 ~]# pwd
+
+/root
+
+[root@5fa48e0d86c5 ~]# mkdir Linux
+
+[root@5fa48e0d86c5 ~]#
+
+cd Linux
+
+[root@5fa48e0d86c5 Linux]# touch state.txt [root@5fa48e0d86c5 Linux] # 1s I
+
+state.txt
+
+[root@5fa48e0d86c5 Linux]# cat state.txt
+
+[root@5fa48e0d86c5 Linux] touch country.txt [root@5fa48e0d86c5 Linux] # df
+
+Filesystem
+
+devtopfs
+
+tmpfs
+
+tmpfs
+
+tmpfs
+
+/dev/vdal
+
+tmpfs
+
+1K-blocks
+
+749924
+
+765336
+
+765336
+
+765336
+
+100659272
+
+153068
+
+Used
+
+Available Use% Mounted on
+
+0 749924 0%
+
+0 765336 0%
+
+8984
+
+756352 2%
+
+0 765336 0%
+
+5281980
+
+90240960
+
+0 153068
+
+/dev
+
+/dev/shm
+
+/run
+
+/sys/fs/cgroup
+
+6% /
+
+0% /run/user/0
+
+[root@5fa48e0d86c5 Linux] + cp ate.txt city.txt [root@5fa48e0d86c5 Linux] # ls
+
+city.txt country.txt state.txt [root@5fa48e0d86c5 Linux] rm country.txt
+
+rm: remove regular empty file 'country.txt'? y
+
+[root@5fa48e0d86c5 Linux] ping 8.8.8.8 PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 9.9.8.9: icmp_seq=1 ttl=118 time-6.21 ms
+
+64 bytes from 9.9.8.9: icmp_seq=2 ttl=118 time-6.89 ms
+
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=118 time-6.22 ms 64 bytes from 8.8.8.8: icmp_seq=4 ttl=118 time-5.30 ms 64 bytes from 8.8.8.8: icmp_seq=5 ttl=118 time-6.29 ms
+
+64 bytes from 8.8.8.8: icmp_seq-6 ttl=118 time-5.31 ms
+
+64 bytes from 8.8.8.8: icmp_seq-7 ttl=118 time-5.23 ms
+
+64 bytes from 8.8.8.8: icmp_seq-8 ttl=118 time-5.36 ms 64 bytes from 8.8.8.8: icmp_seq-9 tt1-118 time-5.35 ms 64 bytes from 8.8.8.8: icmp_seq-10 ttl=118 time-5.34 ms
+
+64 bytes from 8.8.8.8: icmp_seq-11 ttl=118 time-5.38 ms
+
+64 bytes from 8.8.8.8: icmp_seq-12 ttl=118 time-5.30 ms 64 bytes from 8.8.8.8: icmp_seq-13 ttl=118 time-5.41 ms 64 bytes from 8.8.8.8: icmp_seq-14 ttl=118 time-5.37 ms
+
+64 bytes from 8.8.8.8: icmp_seq-15 ttl=118 time-5.20 ms 64 bytes from 8.8.8.8: icmp_seq-16 ttl=118 time-5.33 ms
+
+64 bytes from 8.8.8.8: icmp_seq=17 ttl=118 time=5.29 ms 64 bytes from 8.8.8.8: icmp_seq-18 ttl=118 time=5.32 ms
+
+64 bytes from 8.8.8.8: icmp_seq-19 ttl=118 time-5.25 ms 64 bytes from 8.8.8.8: icmp_seq=20 ttl=118 time-5.28 ms
+
+64 bytes from 8.8.8.8: icmp_seq=21 ttl=118 time-5.28 ms 64 bytes from 8.8.8.8: icmp_seq=22 ttl=118 time-5.25 ms
+
+64 bytes from 8.8.8.8: icmp_seq=23 ttl=118 time-5.21 ms
+
+64 bytes from 8.8.8.8: icmp_seq=24 ttl=118 time-5.26 ms 64 bytes from 8,8,8,8: icmp_seq=25 ttl=118 time-5.35 ms
+
+64 bytes from 8,8,8,8: icmp_seq=26 ttl=118 time-5.32 ms
+
+64 bytes from 8.8.8.8: icmp_seq=154 ttl=118 time-5.36 ms 64 bytes from 8.8.8.8: icmp_seq=155 ttl=118 time-5.32 ms
+
+8.8.8.8 ping statistics
+
+155 packets transmitted, 155 received, 0% packet loss, time 154242
+
+rtt min/avg/max/mdev = 5.181/5.686/17.408/1.594 ms
+
+[root@5fa48e0d86c5 Linux] # uname 
+Linux
+
+[root@5fa48e0d86c5 Linux] #man sudo
+
+I can't show all the content of this command because it is ridiculously big, so I will just share the information about what is 'man' and what exactly 'sudo' means. 
+
+man is just a manual which gives us information about how to use the 
+    Linux terminal and how it works exactly and also how the commands
+    function and what do they mean. 
+
+sudo allows a permitted user to execute a command as the superuser
+     or another user, as specified by the security policy.  The invoking
+     user's real (not effective) user-ID is used to determine the user
+     name with which to query the security policy.
+
+LINUX FILE SYSTEM
+
+[root@5fa48e0d86c5 Linux] # cd ..
+
+[root@5fa48e0d86c5 ~]# 1s
+
+Linux original-ks.cfg
+
+[root@5fa48e0d86c5 ~]# ls -r
+
+original-ks.cfg Linux
+
+[root@5fa48e0d86c5 ~]# ls -1
+
+total
+
+8
+
+drwxr-xr-x. 2 root root 4096 May 15 06:03 Linux
+
+-W▬▬▬▬▬▬▬. 1 root root 2150 Feb 26 2020 original-ks.cfg
+
+[root@5fa48e0d86c5 ~]# cd ..
+
+[root@5fa48e0d86c5 /]# 1s
+
+bin boot dev etc home lib lib64 lost+found
+
+media opt root sbin sys mnt proc run srv tmp usr var
+
+[root@5fa48e0d86c5 /]# cd bin 
+
+[root@5fa48e0d86c5 bin] # ls
+
+The contents of this 'bin' file will be printed after running this command, you can check the files included in this file.
+
+zmore
+
+znew
+
+zscelim
+
+Hove
+
+mobj_dump
+
+modifyrepo
+
+bin file is a self-extracting binary file for Linux and Unix-like operating systems. Bin files often used
+for distributing executable files for program installations. The . bin extension is most commonly associated
+with compressed binary files.
+
+Bin is an abbreviation of Binaries. It's just a directory where a user of an operating system can expect to find 
+applications. It contains essential binary files (unlike /usr/bin directory) also for booting. It usually contains 
+the shells like bash and commonly used commands like cp , mv , rm , cat , ls .
+
+[root@5fa48e0d86c5 bin]# cd ..
+
+[root@5fa48e0d86c5 /1# cd boot [root@5fa48e0d86c5 boot]# ls
+
+config-3.10.0-1062.12.1.e17.x86_64  initramfs-3.10.0-1062.12.1.el7.x86_64kdump.img
+
+efi                                 symvers-3.10.0-1062.12.1.el7.x86_64.ga
+
+grub                                System.map-3.10.0-1062.12.1.el7.x86_64
+
+grub2                               vmlinuz-3.10.0-1062.12.1.el7.x86_64 
+
+initramfs-3.10.0-1062.12.1.el7.x86_64.img
+
+/boot is an important folder in Linux. /boot folder contains all the boot related info files and folders 
+such as grub.conf, vmlinuz image aka kernel etc.
+
+/boot/config-2.6.18-194.17.1.el5 file: This config file contains kernel configuration settings. You no need 
+to edit this file when compiling kernel. This file is created when we are building a kernel with “make menuconfig” command.
+The settings in this file get changed depending on the options we select in “make menuconfig” command. The contents of this
+file is are setting related to modules to be loaded at the time of boot into the kernel.
+
+/boot/initrd-2.6.18-194.17.1.el5.img file: Initrd in other words called as Initializing RAM Disk which loads temporary file 
+system in to RAM at the time of booting process before actual file system mounting. This file is loaded by your kernel image 
+file at the time of booting. This initrd image knows only one configuration file /etc/inittab file. The inittab file contains
+ what are run levels, what init has to do in each run level and what is the default runlevel etc.
+
+/boot/vmlinuz-2.6.18-194.17.1.el5 file: vmlinuz is a compressed Linux Kernel image which is used at the time of booting Linux 
+operating system. Vmlinuz stands for virtual memory Linux kernel zipped. /boot/System.map-2.6.18-194.17.1.el5 file: This is a
+map file used by kernel. This file contains memory location mapped to the kernel variables or functions. Again this file is used
+by vmlinuz kernel image at the time of booting to set symbol names.
+
+/boot/grub/grub.conf or menu.lst file: This file is used for boot loader grub to load grub related configuration so that this is 
+used at the time of booting.
+
+[root@lb2fd5522098 ~]# cd dev
+
+[root@lb2fd5522098 dev] # ls
+
+autofs block bsg btrfs-control odrom char
+
+console core cpu cpu_dma_latency crash disk dri
+
+fb0 fd full fuse hpet hugepages hwrng initatl
+
+input kmsg kvm log loop-control 1p0 1p1 1p2 1p3
+
+mapper mcelog mem mgueue net oldmem ttyl parport0 tty10
+
+port tty11 PPP ptmx pts tty12 tty13 tty28 tty29 tty3 tty30 tty31
+
+tty46 tty7 tty47 tty8 tty48 tty9 tty49 ttyso tty5 ttys1
+
+vasa2 vosa3 vosa4 vasa5 vasa6 tty14 tty32 tty50 ttys2 vda
+
+random tty15 raw rto rta0 sg0 shm tty33 tty51 ttys3 vdal
+
+tty16 tty34 tty52 uhid tty17 tty18 tty19 tty2 snapshot tty20
+
+snd sro tty21 tty22 stderr tty23 tty24 tty35 tty36 tty37 tty38 tty39
+
+tty4 tty40 tty41 tty42 tty43 tty44 vdb tty53 uinput vfio
+
+tty54 urandom vga_arbiter tty55 usbmon0 vhoi
+
+tty56 vas vhost-net tty57 tty58 tty59 tty6 tty60 tty61 tty62
+
+tty63 vas1 zero vas2 vas3 vas4 vas5 vas6 vasa vasal
+
+network latency stdin network throughput stdout tty25 null
+
+nvram tty tty26 tty0 tty27 tty45
+
+The /dev directory contains the special device files for all the devices. The device files are created
+during installation, and later with the /dev/MAKEDEV script. The /dev/MAKEDEV.local is a script written
+by the system administrator that creates local-only device files or links (i.e. those that are not part 
+of the standard MAKEDEV, such as device files for some non-standard device driver).
+
+/dev is the location of special or device files. It is a very interesting directory that highlights one 
+important aspect of the Linux filesystem - everything is a file or a directory.
+
+THIS WERE SOME VERY IMPORTANT FILES REQUIRES FOR THE SYSTEM. THERE ARE MANY FILES LIKE etc, var, home, root, run, etc.
