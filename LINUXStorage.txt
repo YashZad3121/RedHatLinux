@@ -1,0 +1,13 @@
+﻿LINUX STORAGE
+
+
+There are mainly two types of partitions.
+
+
+Storage: -Linux has robust systems and tooling to manage hardware devices, including storage drives. -In this article we’ll cover, at a high level, how Linux represents these devices and how raw storage is made into usable space on the server.What are Disk Partitions? -Disk partitions are a way of breaking up a storage drive into smaller usable units. -A partition is a section of a storage drive that can be treated in much the same way as a drive itself. 
+
+
+MBR(Master Boot Record): MBR is the traditional partitioning system, which has been in use for over 30 years. Because of its age, it has some serious limitations. Because of this, the fourth partition is typically set up as an “extended partition”, in which “logical partitions” can be created. This allows you to subdivide the last partition to effectively allow additional partitions. 
+
+
+GPT(GUID Partition Table): GPT is a more modern partitioning scheme that attempts to resolve some of the issues inherent with MBR. Systems running GPT can have many more partitions per disk. This is usually only limited by the restrictions imposed by the operating system itself. GPT can also write a “protective MBR” which tells MBR-only tools that the disk is being used. In most cases, GPT is the better choice unless your operating system or tooling prevent you from using it.
